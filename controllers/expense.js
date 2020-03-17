@@ -1,5 +1,5 @@
 const expense = require('express').Router()
-const Expense = require('../modules/expense.js')
+const Expense = require('../models/expense.js')
 
 // Index route  - show expenses
 expense.get('/', (req, res) => {
