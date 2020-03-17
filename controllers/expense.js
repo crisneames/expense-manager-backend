@@ -32,7 +32,7 @@ expense.delete('/:id', (req, res) => {
   })
 })
 // Update route
-bookmark.put('/:id', (req, res) => {
+expense.put('/:id', (req, res) => {
   Expense.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedExpense) => {
     if (err) {
       res.status(400).json({ error: err.message })

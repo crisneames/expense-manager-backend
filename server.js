@@ -8,7 +8,7 @@ const cors = require('cors')
 const PORT = process.env.PORT || 3003;
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/expenseManager';
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Middleware
 app.use(express.json())
